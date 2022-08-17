@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>annotations</Nullable>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<AssemblyName>BSynchro Web API Core</AssemblyName>
+		<Authors>Charbel Elia</Authors>
+		<Product>BSynchro</Product>
+	</PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Helpers\BSynchro.DataAccess.RelationalDb.EFCore.MsSQL\BSynchro.DataAccess.RelationalDb.EFCore.MsSQL.csproj" />
+        <ProjectReference Include="..\Helpers\BSynchro.Helpers\BSynchro.Helpers.csproj" />
+        <ProjectReference Include="..\BSynchro.DataAccess\BSynchro.DataAccess.csproj" />
+        <ProjectReference Include="..\BSynchro.Dto\BSynchro.Dto.csproj" />
+        <ProjectReference Include="..\BSynchro.Service.Abstraction\BSynchro.Service.Abstraction.csproj" />
+        <ProjectReference Include="..\BSynchro.Service\BSynchro.Service.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="10.0.0" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.4.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.4.1" />
+        <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+
+    </ItemGroup>
+	
+    <ItemGroup>
+      <Content Update="Properties\launchSettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+
+</Project>

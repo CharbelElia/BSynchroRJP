@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BSynchro.Dto\BSynchro.Dto.csproj" />
+        <ProjectReference Include="..\BSynchro.Service.Abstraction\BSynchro.Service.Abstraction.csproj" />
+    </ItemGroup>
+
+</Project>
