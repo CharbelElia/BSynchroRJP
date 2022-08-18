@@ -10,7 +10,7 @@ namespace BSynchro.WebApi.Constants
         /// <summary>
         /// swagger title
         /// </summary>
-        public string GetTitle() => "BSynchro WebApi New";
+        public string GetTitle() => "BSynchro WebApi for customers bank accounts";
         /// <summary>
         /// swagger version
         /// </summary>
@@ -18,10 +18,10 @@ namespace BSynchro.WebApi.Constants
         /// <summary>
         /// swagger description
         /// </summary>
-        public string GetDescription() => "Dotnet core 6 BSynchro WebApi New";
+        public string GetDescription() => ".NET 6.0 BSynchro WebApi";
         /// <summary>
         /// swagger endpoint name
         /// </summary>
-        public string GetEndpointName() => "BSynchro WebApi New v1.0";
+        public string GetEndpointName() => "BSynchro WebApi v1.0";
     }
 }
